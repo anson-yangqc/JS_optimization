@@ -7,7 +7,6 @@
 * 数据使用提前加载：加载了一版后就偷偷的加载第二版，等触发了再显示；
 * 图片使用延时加载：layzload;
 * css按需加载；
-  ```javascript
   
   function loadCss(url) {
     var link = document.createElement("link");
@@ -17,18 +16,6 @@
     document.getElementsByTagName("head")[0].appendChild(link);
   }
   
-  ```
-  
-  ```javascript
-function one(initoption){
-        this.age=120
-    	one.prototype.add=function(){
-            this.countryClick()
-    	}
-    }
-    var two =new one(init);
-    two.add() // 120
-```
 * js按需加载：（requireJS、es6模块化）
 * 缓存：for循环的长度要缓存；dom节点要缓存；
 * css用css3；因为css3的transform改变left、top不会导致重新渲染页面，它变化的是Dom的虚影；

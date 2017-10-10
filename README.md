@@ -8,6 +8,7 @@
 * 图片使用延时加载：layzload;
 * css按需加载；
   ```javascript
+  
   function loadCss(url) {
     var link = document.createElement("link");
     link.type = "text/css";
@@ -15,6 +16,7 @@
     link.href = url;
     document.getElementsByTagName("head")[0].appendChild(link);
   }
+  
   ```
 * js按需加载：（requireJS、es6模块化）
 * 缓存：for循环的长度要缓存；dom节点要缓存；

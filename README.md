@@ -18,6 +18,17 @@
   }
   
   ```
+  
+  ```javascript
+function one(initoption){
+        this.age=120
+    	one.prototype.add=function(){
+            this.countryClick()
+    	}
+    }
+    var two =new one(init);
+    two.add() // 120
+```
 * js按需加载：（requireJS、es6模块化）
 * 缓存：for循环的长度要缓存；dom节点要缓存；
 * css用css3；因为css3的transform改变left、top不会导致重新渲染页面，它变化的是Dom的虚影；

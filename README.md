@@ -30,4 +30,4 @@
   //TODO
 		// 停止计时，输出时间
 		console.timeEnd('testForEach');
-```javascript
+```

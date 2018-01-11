@@ -25,7 +25,30 @@
 
 ### 降频
 * setTimeout ,设置固定时间，先清除定时器句柄，再生成定时器对象；
+```javascript
+var timeout;
+textarea.addEventListener("keydown",function(){
+//清除上一次的定时器
+clearTimeout(timeout);
+timeout = setTimeout(function(){
+    console.log("you stopped typing");
+},500);
 
+});
+```
+* 声明变量为false，当setTimeout完成后在重置变量为false
+```javascript
+var scheduled = false;
+addEventListener("mousemove", function(event) {
+    if(!scheduled) {
+	scheduled = true;
+	setTimeout(function() {
+	    scheduled = false;
+	    //TODO
+	}, 250);
+    }
+});
+```
 ### 计算代码执行时间
 ```javascript
   // 启动计时器

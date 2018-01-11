@@ -22,3 +22,12 @@
 * 缓存：for循环的长度要缓存；dom节点要缓存；
 * css用css3；因为css3的transform改变left、top不会导致重新渲染页面，它变化的是Dom的虚影；
 * 均用三等号做判断（除了if(test == null){}），由于底层源码对双等号判断了很多逻辑
+
+### 计算代码执行时间
+```javascript
+  // 启动计时器
+		console.time('testForEach');
+  //TODO
+		// 停止计时，输出时间
+		console.timeEnd('testForEach');
+```javascript

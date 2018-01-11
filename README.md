@@ -22,7 +22,13 @@
 * 缓存：for循环的长度要缓存；dom节点要缓存；
 * css用css3；因为css3的transform改变left、top不会导致重新渲染页面，它变化的是Dom的虚影；
 * 均用三等号做判断（除了if(test == null){}），由于底层源码对双等号判断了很多逻辑
-
+* 如5万的循环：
+```javascript
+while比for快，while的条件对比相对简单;
+倒序循环比顺序循环要快；
+必须缓存length；
+不能在循环体内声明变量，得在外面；
+```
 ### 降频
 * setTimeout ,设置固定时间，先清除定时器句柄，再生成定时器对象；
 ```javascript

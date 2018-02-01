@@ -31,15 +31,13 @@
 ```
 
 ```javascript
-* for 循环 减少对比条件
+for 循环 减少对比条件
 <script type="text/javascript">
-
-var arr = ['one','two','three']
-var n =arr.length
-for(;n--;){
-console.log(arr[n])
-}
-
+	var arr = ['one','two','three']
+	var n =arr.length
+	for(;n--;){
+		console.log(arr[n])
+	}
 </script>
 ```
 

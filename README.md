@@ -24,11 +24,25 @@
 * 均用三等号做判断（除了if(test == null){}），由于底层源码对双等号判断了很多逻辑
 * 如5万的循环：
 ```javascript
-while比for快，while的条件对比相对简单;
+需要减少对比条件 可用while
 倒序循环比顺序循环要快；
 必须缓存length；
 不能在循环体内声明变量，得在外面；
 ```
+
+```javascript
+* for 循环 减少对比条件
+<script type="text/javascript">
+
+var arr = ['one','two','three']
+var n =arr.length
+for(;n--;){
+console.log(arr[n])
+}
+
+</script>
+```
+
 ### 降频
 * setTimeout ,设置固定时间，先清除定时器句柄，再生成定时器对象；
 ```javascript
